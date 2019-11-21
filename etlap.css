@@ -49,3 +49,7 @@ table {
 .main img {
     width: 200px;
 }
+.welcome {
+    font-size: 45px;
+    text-align: center;
+}
