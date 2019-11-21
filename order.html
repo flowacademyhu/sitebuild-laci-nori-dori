@@ -4,24 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="order.css">
   <title>Order</title>
 </head>
-<body>
+<body class="body">
+
   <form action="post">
     <div class="wrapper">
       <div class="form welcom">
-        Rendelés
+        <p> Rendelés</p>
+        <p><a href="etlap.html"> Vissza</a></p>
       </div>
-      <fieldset>
-        <div class=" form person"></div>
-        Név: <input type="text" maxlength="30" name="Name" required placeholder="name">
-        Cím: <input type="text" maxlength="30" name="Adress" required placeholder="Adress">
-        Telefon: <input type="tel" maxlength="30" name="Tel" required placeholder="Tel">
-        
-      </fieldset>
-
+      <div class=" form person">
+        <p> Név: <input type="text" maxlength="30" name="Name" required placeholder="name"></p>
+        <p></p>Cím: <input type="text" maxlength="30" name="Adress" required placeholder="Adress"></p>
+        <p>Telefon: <input type="tel" maxlength="30" name="Tel" required placeholder="Tel"></p>       
+        <p>Válassza ki a kívánt ételt!</p>
+      </div>
+      <div class="menu">
+        <div class="leves">
+          Levesek: 
+          <select name="leves" id="leves">
+              <option value="Újházi tyúkhúsleves">Újházi tyúkhúsleves</option>
+              <option value="Bableves">Bableves</option>
+              <option value="Halászlé">Halászlé</option>
+          </select>
+        </div>
+        <div class="foetel">
+          Főételek: 
+          <select name="főétel" id="főétel">
+              <option value="Erdélyi fatányéross">Erdélyi fatányéross</option>
+              <option value="Brassói aprópecsenye">Brassói aprópecsenye</option>
+              <option value="Rántott hús">Rántott hús</option>
+          </select>
+        </div>
+        <div class="savanyu">
+            Főételek: 
+            <select name="savanyú" id="savanyú">
+                <option value="Uborka">Uborka</option>
+                <option value="Káposzta saláta">Káposzta saláta</option>
+                <option value="Cékla">Cékla</option>
+            </select>
+        </div>
+        <div class="desszert">
+            Főételek: 
+            <select name="desszert" id="desszert">
+                <option value="Somlói galuska">Erdélyi fatányéross</option>
+                <option value="Gundel palacsinta">Brassói aprópecsenye</option>
+                <option value="Gesztenyepüré">Gesztenyepüré</option>
+            </select>
+          </div>
+      </div>
+      <div class="send">
+        <button>Elküld</button>
+      </div>
     </div>
-
   </form>
 </body>
 </html>

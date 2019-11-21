@@ -1,0 +1,23 @@
+.body{
+  background-color: rgb(248, 202, 150);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px, 100px;
+  grid-template-rows: auto, auto;
+  justify-items: center;
+}
+
+.grid-food {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 50px;
+  
+}
+
+.grid-arak {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  justify-items: center;
+}
